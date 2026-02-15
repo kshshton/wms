@@ -93,15 +93,25 @@ pm run ios
 
 ## Folder Structure Details
 
-``
+```
 wms/
- admin/              # React + Vite web dashboard
- orders/             # React Native customer app
- user/               # React Native employee app
- server/             # Express.js backend API
- assets/             # Shared static resources
- README.md
-``
+├── admin/              # React + Vite web dashboard
+├── orders/             # React Native customer app
+├── user/               # React Native employee app
+├── server/             # Express.js backend API
+├── assets/             # Shared static resources
+└── README.md
+```
+
+### Directory Breakdown
+
+| Directory | Purpose | Technology |
+|-----------|---------|-----------|
+| **admin/** | Web-based management dashboard | React, Vite, Material-UI |
+| **orders/** | Customer mobile app for browsing and ordering | React Native, Formik |
+| **user/** | Employee mobile app for warehouse operations | React Native, Expo |
+| **server/** | Backend API and business logic | Node.js, Express, PostgreSQL |
+| **assets/** | Shared static resources and documentation | Media files, diagrams |
 
 ## Installation & Setup
 
@@ -113,21 +123,21 @@ wms/
 - npm or yarn package manager
 
 ### Backend Setup
-``ash
+```bash
 cd server
 npm install
 npm run dev
-``
+```
 
 ### Admin Dashboard Setup
-``ash
+```bash
 cd admin
 npm install
 npm run dev
-``
+```
 
 ### Mobile Apps Setup
-``ash
+```bash
 cd user
 npm install
 npm start
@@ -135,7 +145,7 @@ npm start
 # In another terminal, choose your platform:
 npm run android   # or
 npm run ios
-``
+```
 
 ## API Endpoints
 
@@ -152,10 +162,10 @@ See server/routes/ for detailed endpoint definitions.
 ## Testing
 
 Each module includes Jest test suites:
-``ash
+```bash
 cd <module>
 npm test
-``
+```
 
 ## Development
 
